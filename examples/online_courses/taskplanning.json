@@ -1,0 +1,63 @@
+[
+    {
+        "task_name": "Provide details on available courses and learning paths",
+        "steps": [
+            "Use the FaissRAGWorker to retrieve information about available courses and learning paths from the company's internal documentations.",
+            "Present the retrieved information to the user using the MessageWorker.",
+            "Ask the user if they have any specific interests or requirements for courses or learning paths using the MessageWorker.",
+            "Based on the user's response, refine the information using FaissRAGWorker to provide more tailored course options or learning paths.",
+            "Deliver the refined information to the user using the MessageWorker and ask if they need further assistance or have any questions."
+        ]
+    },
+    {
+        "task_name": "Assist with billing inquiries and payment processing",
+        "steps": [
+            "Use the MessageWorker to greet the user and ask them to describe their billing inquiry or payment issue.",
+            "Utilize the FaissRAGWorker to retrieve information from the company's internal documentation about common billing inquiries and payment processing procedures.",
+            "Use the MessageWorker to provide the user with relevant information or solutions based on the retrieved data. Ask if the user needs further assistance or if their issue has been resolved.",
+            "If the user needs further assistance, employ the FaissRAGWorker again to delve deeper into specific details from the company's documentation that might address the user's concern.",
+            "Use the MessageWorker to guide the user through any required steps to resolve their issue or complete their payment. Confirm whether the user is satisfied with the assistance provided."
+        ]
+    },
+    {
+        "task_name": "Provide technical support for platform-related issues",
+        "steps": [
+            "Inquire about the specific issue the user is experiencing with the platform and gather necessary details (e.g., error messages, device information) using MessageWorker.",
+            "Use FaissRAGWorker to search the company's internal documentation for known issues and solutions related to the user's problem.",
+            "Provide the user with potential solutions or troubleshooting steps based on the findings from the internal documentation using MessageWorker.",
+            "Ask the user if the provided solutions resolved the issue or if they need further assistance using MessageWorker.",
+            "If the issue persists or additional help is needed, escalate the problem by suggesting contacting live support or providing further detailed guidance using MessageWorker."
+        ]
+    },
+    {
+        "task_name": "Offer guidance on career paths and skill development",
+        "steps": [
+            "Initiate a conversation with the user to understand their current skills, interests, and career goals using the MessageWorker.",
+            "Use the FaissRAGWorker to access internal documentation and provide information or suggestions on relevant career paths and skill development opportunities.",
+            "Ask the user if they have any specific questions or would like more details on particular career paths or skills using the MessageWorker.",
+            "If the user has further questions or needs additional information, use the SearchWorker to provide real-time information or suggestions.",
+            "Conclude the interaction by providing actionable advice or resources for the user to explore further, using the MessageWorker."
+        ]
+    },
+    {
+        "task_name": "Facilitate community engagement and provide access to community resources",
+        "steps": [
+            "Greet the user and inquire about the specific type of community engagement or resources they are interested in.",
+            "Use the FaissRAGWorker to search the company's internal documentation for relevant community resources or engagement opportunities based on the user's interests.",
+            "Present the found information to the user using the MessageWorker, including any relevant details about the community resources or engagement opportunities.",
+            "Ask the user if they need more information or assistance with any specific community-related activities or resources.",
+            "If the user requests additional information or has a specific query, use the SearchWorker to provide real-time information or updates on community resources.",
+            "Conclude the interaction by confirming if the user has all the needed information and offer further assistance if necessary."
+        ]
+    },
+    {
+        "task_name": "Provide personalized learning recommendations and course suggestions",
+        "steps": [
+            "Inquire about the user's learning goals, interests, and any specific requirements for courses or learning resources.",
+            "Use the FaissRAGWorker to search the company's internal documentation for relevant courses or learning materials that match the user's input.",
+            "Provide a curated list of personalized learning recommendations and course suggestions to the user.",
+            "Ask if the user would like more information about any of the suggested courses or has other specific preferences.",
+            "Deliver additional details about the selected courses, such as duration, prerequisites, and enrollment steps, using the FaissRAGWorker."
+        ]
+    }
+]
